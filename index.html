@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>three.js webgl - interactive cubes</title>
+		<title>ByteMineX</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
 			body {
-				font-family: Monospace;
+				font-family: 'Montserrat', sans-serif;
 				background-color: #f0f0f0;
 				margin: 0px;
 				overflow: hidden;
 			}
-
-		
 
 			label, input {
 				cursor: pointer;
@@ -71,10 +69,11 @@
 				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                var milliseconds = Math.floor((distance % (1000 * 60)) * 1000 /1000);
+                // var milliseconds = Math.floor((distance % (1000 * 60)) * 1000 /1000);
+				
 				// Display the result in the element with id="dem"o"
 				document.getElementById("timer").innerHTML ="<h1>Countdown to Launch</h1><div class ='timerSec'>"+days + " Days " +'</div>'+'<div class ="timerSec">' +hours + " Hours "+
-				'</div>'+'<div class ="timerSec">'+ minutes + " Minutes" +"</div><div class ='timerSec'>"+ seconds + " Seconds"+'</div>'+ '<div class = "timerSec">'+ milliseconds +" Milliseconds"+'</div></div>';
+				 '</div>'+'<div class ="timerSec">'+ minutes + " Minutes" +"</div><div class ='timerSec'>"+ seconds + " Seconds"+'</div></div>';
 
 				// If the count down is finished, write some text 
 				if (distance < 0) {
@@ -121,7 +120,7 @@
 				byem.style.textAlign = 'center';
 				byem.style.width = '100%';
 				byem.style.margin = '0 auto';
-                byem.style.backgroundColor = 'black';
+                // byem.style.backgroundColor = 'black';
                 
                 logo.style.backgroundColor = 'white';
                 logo.style.position = 'absolute';

@@ -9,13 +9,16 @@ height:100%;
     position:'absolute';
     color:'white';
     top:'0';
-    width :'25%';
+    width :'10%';
     float:left;
-    font-size:2em;
-    margin-left:10%;
+    font-size:3em;
+    margin-left:8%; 
 }
 
 .responsive{
 width: 60%;
 height: auto;
 }
+
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
